@@ -25,10 +25,9 @@
         "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
         "lint-fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
         "prettier": "prettier --write .",
+        "prepare": "husky install && chmod ug+x .husky/*",
         "lint-staged": "lint-staged --config lint-staged.js",
-        "husky-install": "husky install",
-        "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{js,jsx,ts,tsx}\"",
-        "prepare": "husky install"
+        "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{js,jsx,ts,tsx}\""
     },
     "eslintConfig": {
         "extends": [
